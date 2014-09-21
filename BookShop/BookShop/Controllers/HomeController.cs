@@ -11,12 +11,22 @@ namespace BookShop.Controllers {
       return View();
     }
 
+
+
+    public ActionResult Dashboard() {
+      return PartialView("_dashboard");
+    }
+
     public ActionResult BooksView() {
       return PartialView("_booksView");
     }
 
     public ActionResult ReadersView() {
       return PartialView("_readersView");
+    }
+
+    public ActionResult BookEdit() {
+      return PartialView("_bookEdit");
     }
   }
 }

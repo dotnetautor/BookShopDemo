@@ -8,6 +8,8 @@ require.config({
     jquery: "/Scripts/lib/jquery-2.1.1.min",
     bootstrap: '/Scripts/lib/bootstrap.min',
     
+    wysihtml5: '/Scripts/lib/wysihtml5/wysihtml5-0.3.0.min',
+
     breeze: '/Scripts/lib/breeze.min',
 
     angular: '/Scripts/lib/angular.min',

@@ -1,0 +1,22 @@
+﻿<div class="container">
+  <div class="row clearfix">
+    <a ng-click="backCommand.execute()"   ng-disabled="!backCommand.canExecute()" class="btn btn-primary"><i class="glyphicon glyphicon-arrow-left"></i> Back</a>
+    <a ng-click="saveCommand.execute()"   ng-disabled="!saveCommand.canExecute()" class="btn btn-success"><i class="glyphicon glyphicon-save"></i> Save</a>
+    <a ng-click="cancelCommand.execute()" ng-disabled="!cancelCommand.canExecute()" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Cancel</a>
+  </div>
+  <div class="row clearfix">
+    </div>
+    <div class="row clearfix">
+      <div class="col-md-5 col-sm-4 column">
+        <textbox name="title" title="Title" thisval="book.title"></textbox>
+      </div>
+      <div class="col-md-5 col-sm-4 column">
+        <textbox name="subTitle" title="Sub Title" thisval="book.subTitle"></textbox>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-md-12 column" rich-text-editor ng-model="book.description">      
+      </div>
+    </div>
+
+  </div>
